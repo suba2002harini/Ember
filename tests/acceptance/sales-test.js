@@ -9,7 +9,6 @@ module('Acceptance | sales', function (hooks) {
 
     assert.equal(currentURL(), '/');
     assert.dom('h2').hasText('Welcome to Super Rentals!');
-    assert
   });
 
 });
