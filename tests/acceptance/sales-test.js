@@ -1,5 +1,5 @@
 import { module, test } from 'qunit';
-import { visit, currentURL } from '@ember/test-helpers';
+import { visit, currentURL} from '@ember/test-helpers';
 import { setupApplicationTest } from 'sales/tests/helpers';
 
 module('Acceptance | sales', function (hooks) {
@@ -10,5 +10,4 @@ module('Acceptance | sales', function (hooks) {
     assert.equal(currentURL(), '/');
     assert.dom('h2').hasText('Welcome to Super Rentals!');
   });
-
 });
