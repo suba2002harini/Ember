@@ -6,7 +6,6 @@ module('Acceptance | sales', function (hooks) {
   setupApplicationTest(hooks);
   test('visiting /', async function (assert) {
     await visit('/');
-
     assert.equal(currentURL(), '/');
     assert.dom('h2').hasText('Welcome to Super Rentals!');
   });
