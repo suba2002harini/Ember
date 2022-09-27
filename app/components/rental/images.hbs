@@ -1,0 +1,18 @@
+{{!-- <div class="image-fluid">
+  <img ...attributes height="200px">
+</div> --}}
+{{#if this.isLarge}}
+  {{!-- <div class="image large"> --}}
+    <button type="button" class="image large" {{on "click" this.toggleSize}}>
+    <img ...attributes height="200px">
+    <small>click to view small</small>
+    </button>
+  {{!-- </div> --}}
+{{else}}
+  {{!-- <div class="image"> --}}
+    <button type="button" class="image" {{on "click" this.toggleSize}}>
+        <img ...attributes height="150px">
+        <small>click to view large</small>
+    </button>
+  {{!-- </div> --}}
+{{/if}}

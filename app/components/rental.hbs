@@ -1,0 +1,27 @@
+<article class="rental row">
+  <div class="col-md-6">
+    <Rental::Images
+        {{!-- src="assets/images/home.jpg"
+        alt="A picture of Grand Old Mansion" --}}
+         src={{@rental.image}}
+         alt="A picture of {{@rental.title}}"
+    />
+  </div>
+  <div class="col-md-6">
+    <div class="details">
+        <h3 class="font-weight-bold">{{@rental.title}}</h3>
+        <div class="detail owner">
+        <span class="font-weight-bold">Owner:</span> {{@rental.owner}}
+        </div>
+        <div class="detail type">
+        <span class="font-weight-bold">Type:</span> {{@rental.type}}
+        </div>
+        <div class="detail location">
+        <span class="font-weight-bold">Location:</span> {{@rental.city}}
+        </div>
+        <div class="detail bedrooms">
+        <span class="font-weight-bold">Number of bedrooms:</span>{{@rental.bedrooms}}
+        </div>
+    </div>
+   </div>
+</article>

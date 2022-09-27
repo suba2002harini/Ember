@@ -4,6 +4,17 @@
     <p>We hope you find exactly what you're looking for in a place to stay.</p>
     <LinkTo @route="about" class="button btn btn-primary">About Us</LinkTo></div>
     <div class="col-sm-6"><img src="assets/images/teaching-tomster.jpg" class="img-fluid" alt="Cinque Terre" height="300px"/></div>
-    
   </div>
+</div>
+
+<h1>{{@model.title}}</h1>
+<div class="container-fluid">
+  <ul class="list-group">
+    {{!-- <li class="list-group-item text-center p-5 mb-2 list-group-item-action"><Rental @rental={{@model}}/></li>
+    <li class="list-group-item text-center p-5 mb-2 list-group-item-action"><Rental /></li>
+    <li class="list-group-item text-center p-5 mb-2 list-group-item-action"><Rental /></li> --}}
+    {{#each @model as |rental|}}
+      <li class="list-group-item text-center p-5 mb-2 list-group-item-action"><Rental @rental={{rental}} /></li>
+    {{/each}}
+  </ul>
 </div>
