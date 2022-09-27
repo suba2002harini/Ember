@@ -10,7 +10,7 @@ export default class IndexRoute extends Route {
       let type;
       if (COMMUNITY_CATEGORIES.includes(attributes.category)) {
         type = 'Community';
-      } 
+      }
       else {
         type = 'Standalone';
       }
