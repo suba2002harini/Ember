@@ -10,4 +10,5 @@ Router.map(function () {
   this.route('home');
   this.route('contact');
   this.route('about');
+  this.route('rental', { path: '/rentals/:rental_id' });
 });

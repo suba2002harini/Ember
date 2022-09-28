@@ -33,3 +33,7 @@ body {
   height: 480px;
   width: 440px;
 }
+span{
+  color:green;
+  font-weight: bolder;
+}
