@@ -30,15 +30,9 @@ module('Acceptance | sales', function (hooks) {
     let button = find('.share.button');
 
     let tweetURL = new URL(button.href);
-<<<<<<< HEAD
     assert.strictEqual(tweetURL.host, 'twitter.com');
 
     assert.strictEqual(
-=======
-    assert.strictEqual((tweetURL.host, 'twitter.com');
-
-    assert.strictEqual((
->>>>>>> ac6a65ccbbee6a4e7cafdc785b83710fa822c9f7
       tweetURL.searchParams.get('url'),
       `${window.location.origin}/rentals/grand-old-mansion`
     );
