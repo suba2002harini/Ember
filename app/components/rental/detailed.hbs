@@ -16,8 +16,15 @@
   </center>
   <br><br>
   <div class="details container border text-center">
+    
     <h3 class="display-4 font-weight-bold">About {{@rental.title}}</h3>
-
+        <ShareButton
+            @text="Check out {{@rental.title}} on Super Rentals!"
+            @hashtags="vacation,travel,authentic,blessed,superrentals"
+            @via="emberjs"
+        >
+            Share on Twitter
+        </ShareButton>
     <div class="detail owner">
       <span>Owner:</span> {{@rental.owner}}
     </div>

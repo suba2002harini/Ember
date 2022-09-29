@@ -1,0 +1,19 @@
+<div class="container-fluid text-center">
+  <label>
+    <span style="font-size:30px;color:gray">Where would you like to stay?</span>
+    <Input @value={{this.query}} class="light form-control" />
+    <p>Are you looking for {{this.query}} .........</p>
+  </label>
+  <br>
+  <ul class="list-group">
+    {{!-- {{#each @rentals as |rental|}}
+      <li><Rental @rental={{rental}} /></li>
+    {{/each}} --}}
+    <Rental::Filter @rentals={{@rentals}} @query={{this.query}} as |results|>
+      {{#each results as |rental|}}
+        {{log rental}}
+        <li class="list-group-item text-center p-5 mb-2 list-group-item-action"><Rental @rental={{rental}} /></li>
+      {{/each}}
+    </Rental::Filter>
+  </ul>
+</div>
