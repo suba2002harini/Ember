@@ -9,7 +9,11 @@
   </div>
   <div class="col-md-6">
     <div class="details">
-        <h3 class="font-weight-bold">{{@rental.title}}</h3>
+        <h3 class="font-weight-bold text-decoration-none">
+          <LinkTo @route="rental" @model={{@rental}} class="text-dark" id="dec">
+            {{@rental.title}}
+          </LinkTo>
+        </h3>
         <div class="detail owner">
         <span class="font-weight-bold">Owner:</span> {{@rental.owner}}
         </div>

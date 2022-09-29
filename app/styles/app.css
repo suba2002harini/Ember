@@ -33,3 +33,14 @@ body {
   height: 480px;
   width: 440px;
 }
+span{
+  color:green;
+  font-weight: bolder;
+}
+.search{
+  font-size:30px;
+  color:gray;
+}
+#dec{
+  text-decoration: none;
+}
