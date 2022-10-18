@@ -1,8 +1,5 @@
-import { module, test } from 'qunit';
+import { module } from 'qunit';
 import { setupRenderingTest } from 'sales/tests/helpers';
-import { render } from '@ember/test-helpers';
-import { hbs } from 'ember-cli-htmlbars';
-
 module('Integration | Component | error', function (hooks) {
   setupRenderingTest(hooks);
 });
