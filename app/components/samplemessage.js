@@ -12,8 +12,8 @@ export default class MessagesComponent extends Component {
         active: true,
         content: `${messageText}`,
       },
-    ];  
-}
+    ];
+  }
 
   @tracked messages = [
     {
