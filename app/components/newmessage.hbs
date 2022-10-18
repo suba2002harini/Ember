@@ -1,0 +1,10 @@
+<form {{on "submit" this.createMessage }}>
+   <Input @value={{this.name}} />
+   {{this.name}}
+   <Input @value={{this.message}} />
+   {{this.message}}
+  <button type="submit">
+    Send
+  </button>
+  
+</form>

@@ -1,0 +1,12 @@
+<div class="messages">
+  {{#each this.messages as |message|}}
+    <Message
+      @username={{message.username}}
+      @userIsActive={{message.active}}
+      @userLocaltime={{message.localTime}}
+    >
+      {{{message.content}}}
+    </Message>
+  {{/each}}
+  <Newmessage @onCreate={{this.addMessage}}/>
+</div>
