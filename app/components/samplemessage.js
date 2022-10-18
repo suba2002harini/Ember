@@ -4,11 +4,11 @@ import { action } from '@ember/object';
 
 export default class MessagesComponent extends Component {
   @action
-  addMessage(messageText,uname) {
-    this.messages = [...this.messages, {
-      username:uname,
-      active: true,
-      content: `<p>${messageText}</p>`
+  addMessage(messageText, uname) {
+    this.messages = [ ...this.messages, {
+        username: uname,
+        active: true,
+        content: `<p>${messageText}</p>`
     }];
   }
 
@@ -22,7 +22,7 @@ export default class MessagesComponent extends Component {
           Hey Zoey, have you had a chance to look at the EmberConf
           brainstorming doc I sent you?
         </p>
-      `
+      `,
     },
     {
       username: 'Zoey',
@@ -54,7 +54,7 @@ export default class MessagesComponent extends Component {
         </ul>
 
         <p>Let me know when you've nailed down the dates!</p>
-      `
-    }
+      `,
+    },
   ];
 }

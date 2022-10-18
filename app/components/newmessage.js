@@ -10,11 +10,11 @@ export default class NewMessageInputComponent extends Component {
     event.preventDefault();
 
     if (this.message && this.args.onCreate && this.name) {
-      this.args.onCreate(this.message,this.name);
+      this.args.onCreate(this.message , this.name);
 
       // reset the message input
       this.message = '';
-      this.name='';
+      this.name = '';
     }
   }
 }
