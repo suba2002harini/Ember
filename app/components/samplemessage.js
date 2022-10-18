@@ -5,12 +5,14 @@ import { action } from '@ember/object';
 export default class MessagesComponent extends Component {
   @action
   addMessage(messageText, uname) {
-    this.messages = [...this.messages,{
+    this.messages = [
+        ...this.messages,
+        {
         username: uname,
         active: true,
         content: `<p>${messageText}</p>`,
       },
-      ]; 
+    ];
   }
 
   @tracked messages = [
