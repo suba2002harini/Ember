@@ -5,7 +5,7 @@
       @userIsActive={{message.active}}
       @userLocaltime={{message.localTime}}
     >
-      {{{message.content}}}
+      {{message.content}}
     </Message>
   {{/each}}
   <Newmessage @onCreate={{this.addMessage}}/>
