@@ -9,7 +9,8 @@ export default class MessagesComponent extends Component {
         username: uname,
         active: true,
         content: `<p>${messageText}</p>`,
-    }]; 
+      },
+      ]; 
   }
 
   @tracked messages = [

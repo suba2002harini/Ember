@@ -1,8 +1,9 @@
 <form {{on "submit" this.createMessage }}>
-   <Input @value={{this.name}} />
-   {{this.name}}
+  <label for="name">Name:</label>
+   <Input @value={{this.name}} /><br>
+
+  <label for="text">YOUR TEXT:</label>
    <Input @value={{this.message}} />
-   {{this.message}}
   <button type="submit">
     Send
   </button>
