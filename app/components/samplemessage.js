@@ -6,13 +6,13 @@ export default class MessagesComponent extends Component {
   @action
   addMessage(messageText, uname) {
     this.messages = [
-      ...this.messages, 
+      ...this.messages,
       {
         username: uname,
         active: true,
         content: `${messageText}`,
       },
-    ];}
+    ];  }
 
   @tracked messages = [
     {
