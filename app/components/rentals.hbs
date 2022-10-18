@@ -11,7 +11,7 @@
     {{/each}} --}}
     <Rental::Filter @rentals={{@rentals}} @query={{this.query}} as |results|>
       {{#each results as |rental|}}
-        <li class="list-group-item text-center p-5 mb-2 list-group-item-action"><Rental @rental={{rental}} /></li>
+        <li class="list-group-item text-center p-5 mb-2 list-group-item-action"><Rental @rental={{rental}} @go="title" /></li>
       {{/each}}
     </Rental::Filter>
   </ul>

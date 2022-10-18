@@ -3,7 +3,7 @@
   href={{this.shareURL}}
   target="_blank"
   rel="external nofollow noopener noreferrer"
-  class="share button"
+  class="share button text-light {{if @check "bg-success" "bg-danger"}}"
 >
   {{yield}}
 </a>
