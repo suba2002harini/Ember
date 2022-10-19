@@ -1,0 +1,10 @@
+<form>
+  <input {{autofocus}}>
+</form>
+<p class="help-icon" {{on "click" this.showHelp}}>?</p>
+
+{{#if this.showingHelp}}
+  <Modal @clickedOutside={{this.hideHelp}}>
+    Here's some interesting facts about the sidebar that you can learn.
+  </Modal>
+{{/if}}
